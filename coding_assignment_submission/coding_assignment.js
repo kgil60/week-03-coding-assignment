@@ -33,7 +33,7 @@ for (let i=0; i<names.length; i++) {
 let averageLength = totalLetters / names.length; // calculate average length
 console.log(averageLength);
 
-console.log('\n 2B \n\n');
+console.log('\n 2 B \n\n');
 let nameConcat = ""; // initialize concated name string
 
 // concat all names to nameConcat
@@ -41,3 +41,28 @@ for (let i=0; i<names.length; i++) {
     nameConcat += (names[i] + " "); // add name plus space character to nameConcat
 }
 console.log(nameConcat);
+
+console.log('\n 3 \n\n');
+
+// ANSWER TO STEP 3:
+// arrayName[arrayName.length - 1]
+
+// TO VIEW ANSWER IN BROWSER:
+console.log('arrayName[arrayName.length - 1]');
+
+console.log('\n 4 \n\n');
+
+// ANSWER TO STEP 4:
+// arrayName[0]
+
+// TO VIEW ANSWER IN BROWSER:
+console.log('arrayName[0]');
+
+console.log('\n 5 \n\n');
+let nameLengths = []; // initialize nameLengths array
+
+// loop over names array and add each length to nameLengths
+for (let i=0; i<names.length; i++) {
+    nameLengths.push(names[i].length) // add current name length to nameLengths
+}
+console.log(nameLengths);
