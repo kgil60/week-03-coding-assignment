@@ -89,4 +89,81 @@ function wordConcat(word, n) {
 
     return concatString;
 }
-console.log(wordConcat('Hello', 3));
+console.log(wordConcat('Hello', 3)); // test wordConcat
+
+console.log('\n 8 \n\n');
+
+// takes a first and last name and returns a full name
+function fullNameConcat(firstName, lastName) {
+    return `${firstName} ${lastName}`;
+}
+
+console.log(fullNameConcat('John', 'Smith')); // test fullNameConcat
+
+console.log('\n 9 \n\n');
+
+// takes array of numbers and returns true if sum of all numbers is greater than 100
+function isSumOver100(numbers) {
+    let total = 0 // initialize total counter
+
+    // loop over numbers and obtain total sum
+    for (let i=0; i<numbers.length; i++) {
+        total += numbers[i]; // adds current number to total
+    }
+
+    // determines whether or not total is greater than 100
+    if (total > 100) {
+        return true;
+    }
+    return false;
+}
+
+// tests for isSumOver100
+console.log(isSumOver100([1, 2, 3, 4, 5])) // should return false
+console.log(isSumOver100([50, 60, 70])) // should return true
+
+console.log('\n 10 \n\n');
+
+// takes an array of numbers and returns the average of all the elements
+function calculateAverage(numbers) {
+    let total = 0; // initialize total counter
+
+    // calculate total sum of elements
+    for (let i=0; i<numbers.length; i++) {
+        total += numbers[i];
+    }
+
+    return (total / numbers.length);
+}
+
+console.log(calculateAverage([1, 2, 3, 4, 5])) // test for calculateAverage, should return 3
+
+console.log('\n 11 \n\n');
+
+// takes 2 arrays of numbers and returns true of the average of the first array is greater than the second
+function greaterAverage(array1, array2) {
+    // initialize total count variables for both arrays
+    let total1 = 0;
+    let total2 = 0;
+
+    // calculate total sum of array1
+    for (let i=0; i<array1.length; i++) {
+        total1 += array1[i]; // add current value to the total
+    }
+
+    // calculate total sum of array 2
+    for (let i=0; i<array2.length; i++) {
+        total2 += array2[i] // add current value to the total
+    }
+
+    // calculate both averages
+    let array1Average = total1 / array1.length;
+    let array2Average = total2 / array2.length;
+
+    // determine if array1Average is greater than array2Average
+    return array1Average > array2Average;
+}
+
+// tests for greaterAverage
+console.log(greaterAverage([1,2,3,4,5], [6,7,8,9,10])) // should return false
+console.log(greaterAverage([6,7,8,9,10], [1,2,3,4,5])) // should return true
