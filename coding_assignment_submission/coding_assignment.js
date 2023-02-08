@@ -66,3 +66,27 @@ for (let i=0; i<names.length; i++) {
     nameLengths.push(names[i].length) // add current name length to nameLengths
 }
 console.log(nameLengths);
+
+console.log('\n 6 \n\n');
+let lengthsTotal = 0; // initialize variable to calculate total lengths sum
+
+// calculate total sum of values in nameLengths
+for (let i=0; i<nameLengths.length; i++) {
+    lengthsTotal += nameLengths[i]; // add current length to total
+}
+console.log(lengthsTotal);
+
+console.log('\n 7 \n\n');
+
+// function that concatenates provided word n amount of times
+function wordConcat(word, n) {
+    let concatString = ""; // initialize the concatenated string variable
+
+    // loop n amount of times and add word to concatString
+    for (let i=0; i<n; i++) {
+        concatString += word;
+    }
+
+    return concatString;
+}
+console.log(wordConcat('Hello', 3));
