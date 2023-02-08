@@ -1,5 +1,5 @@
 console.log('\n 1 A \n\n');
-let ages = [3, 9, 23, 64, 2, 8, 28, 93] // create array "ages"
+let ages = [3, 9, 23, 64, 2, 8, 28, 93]; // create array "ages"
 console.log(ages);
 
 console.log('\n 1 B \n\n');
@@ -18,3 +18,26 @@ for (let i=0; i<ages.length; i++) {
 
 let averageAge = agesCount / ages.length; // calculate average age
 console.log(averageAge);
+
+console.log('\n 2 A \n\n');
+let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']; // create array "names"
+console.log(names);
+
+let totalLetters = 0; // initialize total_letters variable
+
+// get total sum of letters in names
+for (let i=0; i<names.length; i++) {
+    totalLetters += names[i].length // add length of current name to total
+}
+
+let averageLength = totalLetters / names.length; // calculate average length
+console.log(averageLength);
+
+console.log('\n 2B \n\n');
+let nameConcat = ""; // initialize concated name string
+
+// concat all names to nameConcat
+for (let i=0; i<names.length; i++) {
+    nameConcat += (names[i] + " "); // add name plus space character to nameConcat
+}
+console.log(nameConcat);
