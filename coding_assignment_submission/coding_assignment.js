@@ -167,3 +167,42 @@ function greaterAverage(array1, array2) {
 // tests for greaterAverage
 console.log(greaterAverage([1,2,3,4,5], [6,7,8,9,10])) // should return false
 console.log(greaterAverage([6,7,8,9,10], [1,2,3,4,5])) // should return true
+
+console.log('\n 12 \n\n');
+
+// returns true if it is hot outside and there is enough money in pocket
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    return (isHotOutside && moneyInPocket > 10.50);
+}
+
+// tests for willBuyDrink
+console.log(willBuyDrink(true, 10.00)) // should return false
+console.log(willBuyDrink(true, 11.00)) // should return true
+console.log(willBuyDrink(false, 11.00)) // should return false
+console.log(willBuyDrink(false, 5.00)) // should return false
+
+console.log('\n 13 \n\n')
+
+// determines if it is a leap year or not
+function isLeapYear(year) {
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                return true
+            }
+            return false
+        }
+        return true
+    }
+}
+
+// tests for isLeapYear
+console.log(isLeapYear(2000)) // should return true
+console.log(isLeapYear(1900)) // should return true
+
+// ANSWER FOR STEP 13:
+// This function determines whether or not the given year is a leap year.
+// I made this function because the rules that determine a leap year are very confusing and it is much more simple to let a computer do it
+
+// TO VIEW ANSWER IN BROWSER:
+console.log('This function determines whether or not the given year is a leap year. I made this function because the rules that determine a leap year are very confusing and it is much more simple to let a computer do it')
